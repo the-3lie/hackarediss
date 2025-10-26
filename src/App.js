@@ -22,7 +22,7 @@ function App() {
         <div className='d-flex align-items-center'>
           {/* <button className='btn btn-dark'><i className='bi bi-flag-fill'></i></button> */}
           <img src={logo} className='border rounded' alt="Logo Redis" style={{ height: '40px' }} />
-          <span className='h5 ms-2 fw-bold'>HETECH</span>
+          <span className='h5 ms-2 fw-bold'>HACKAREDIS</span>
         </div>
         <div>
           <button className='btn btn-info text-white fw-semibold px-3 d-flex gap-2 align-items-center'><i className="bi bi-people-fill"></i>S'inscrire</button>
