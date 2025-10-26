@@ -237,7 +237,7 @@ function App() {
   </div>
 </section>
  <section>
-          
+{/*           
       <h2 className=' underline-animate my-6 py-6 fs-7' style={{color: " #22B8E5"}}> Nos Partenaires</h2>
       <div className="container text-center py-5">
   <div className="row">
@@ -291,7 +291,7 @@ function App() {
         Vvoir les details »
     </button>     </div>
   </div>
-</div>
+</div> */}
 
  </section>
 
