@@ -295,6 +295,23 @@ function App() {
 
  </section>
 
+
+ <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 HackaRedis. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a  class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+                    <a  class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+                    <a  class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a  class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     </div>
     
   );
