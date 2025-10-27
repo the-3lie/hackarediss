@@ -13,6 +13,8 @@ import './assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaWhatsapp, FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function App() {
   document.title = "Landing Page Hacka Redis"; 
@@ -51,28 +53,10 @@ function App() {
               </div>
             </div>
           </div>
-          
-          {/* <img src={landing3} className='img-fluid object-fit-cover border rounded' /> */}
         </div>
-        {/* <div className="col-lg-4 my-6 ">
-                <img src={photo} className="rounded-circle border border-2 border-transparent " alt="photo"
-                  style={{ width: '50px', height: '50px', objectFit: 'cover' }}
-                />
-       </div> */}
       </main>
-      {/* <section className='row d-flex flex-column md-flex-md-row flex-lg-row pt-6 my-5'>
-        <div className='col-12 mb-4 m-lg-0 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center'>
-          <img src={landing} className='img-fluid object-fit-cover border rounded' alt="Landing" />
-        </div>
-        <div className='col-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column text-start text-wrap'>
-          <h2 className='display-4 fw-bold'>Relevez des défis passionnants</h2>
-          <p className='fs-5 text-muted mb-4'>Participez à des défis techniques stimulants conçus pour tester vos compétences en développement, en résolution de problèmes et en innovation.</p>
-          <div className='d-flex align-items-center mt-3'>
-            <button className='btn btn-info text-white fw-medium me-3'><i className="bi bi-lightning-fill"></i> Commencer un défi</button>
-            <button className='btn btn-white shadow fw-medium me-3'><i className="bi bi-journal-text"></i>Voir les défis</button>
-          </div>
-        </div>
-      </section> */}
+
+
       <section className='row d-flex flex-column flex-md-row flex-lg-row pt-5 my-5  text-white p-4 mb-0 custom-shadow' style={{backgroundColor : " #22B8E5"}}>
         <div className='col-12 mb-4 py-3 m-lg-0 col-md-6 col-lg-6 col-xl-6 d-flex gap-4 flex-md-column flex-lg-column align-items-center'>
           <div className='col-12 col-md-6 col-lg-6 col-xl-6'>
@@ -295,25 +279,65 @@ function App() {
 
  </section>
 
-
- <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2025 HackaRedis. Tous droits réservés.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <a  class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
-                    <a  class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-                    <a  class="text-white me-3"><i class="bi bi-linkedin fs-5"></i></a>
-                    <a  class="text-white"><i class="bi bi-instagram fs-5"></i></a>
-                </div>
+<footer
+      className="text-white pt-5 pb-3 mt-5 row d-flex"
+      style={{ backgroundColor: '#22B8E5' }}
+    >
+      <Container>
+        <Row className="align-items-start text-center text-md-start">
+          {/* Logo et description */}
+          <Col md={4} className="mb-4 mb-md-0">
+            <div className="d-flex flex-column align-items-center align-items-md-start">
+              <img
+                src={logo}
+                alt="Logo"
+                className="rounded-circle mb-3 border border"
+                style={{ width: '80px', height: '80px', objectFit: 'cover' }}
+              />
+              <p className="small mb-0">
+               pret a relever le defis, tous en motrant ton tallent, viens vivre une exprerience pas comme les autres dans le developpement et le reseau  </p>
             </div>
-        </div>
+          </Col>
+
+          {/* Liens rapides */}
+          <Col md={4} className="mt-7   mb-md-">
+            <h5 className="fw-bold mb-6 ps-5">Liens utiles</h5>
+            <ul className=" ps-5  ">
+              <li><a href="#home" className="text-white text-decoration-none  ">Accueil</a></li>
+              <li><a href="#about" className="text-white text-decoration-none">À propos</a></li>
+              <li><a href="#events" className="text-white text-decoration-none">Événements</a></li>
+              <li><a href="#contact" className="text-white text-decoration-none">Contact</a></li>
+            </ul>
+          </Col>
+
+          {/* Réseaux sociaux */}
+          <Col md={4} className="text-center ">
+            <h5 className="fw-bold mb-3">Suivez-nous</h5>
+            <div className="d-flex justify-content-center  gap-3">
+              <a href="#" className="text-white fs-4"><FaTwitter /></a>
+              <a href="#" className="text-white fs-4"><FaInstagram /></a>
+              <a href="#" className="text-white fs-4"><FaLinkedin /></a>
+            </div>
+          </Col>
+        </Row>
+
+        {/* Ligne de séparation */}
+        <hr className="border-light my-4" />
+
+        {/* Copyright */}
+        <Row>
+          <Col className="text-center small">
+            &copy; {new Date().getFullYear()} HackaRedis. Tous droits réservés.
+          </Col>
+        </Row>
+      </Container>
     </footer>
+    
+ 
+ 
 
     </div>
-    
+     
   );
 }
 
