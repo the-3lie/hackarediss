@@ -2,6 +2,7 @@ import logo from './assets/redis_logo_2025.jpg';
 import photo from'./assets/image.png';
 import image from'./assets/image2.jpg';
 import img from'./assets/image_2.jpg';
+import img from'./assets/imagez.jpg';
 import imge from'./assets/télécharger.jpeg';
 import landing from './assets/landing_page.jpg';
 import landing2 from './assets/landing_page2.jpg';
@@ -53,7 +54,7 @@ function App() {
                 <img src={landing3} class="img-fluid object-fit-cover border rounded" alt="..."/>
               </div>
               <div class="carousel-item">
-                <img src={landing} class="img-fluid object-fit-cover border rounded" alt="..."/>
+                <img src={imageZ} class="img-fluid object-fit-cover border rounded" alt="..."/>
               </div>
             </div>
           </div>
@@ -299,8 +300,7 @@ function App() {
                 style={{ width: '80px', height: '80px', objectFit: 'cover' }}
               />
               <p className="small mb-0">
-               pret a relever le defis, tous en motrant ton tallent, viens vivre une exprerience pas comme les autres dans le developpement et le reseau  </p>
-            </div>
+prêt à relever le défi, tout en motivant ton talent, viens vivre une expérience pas comme les autres dans le développement et le réseau.</p>            </div>
           </Col>
 
           {/* Liens rapides */}
