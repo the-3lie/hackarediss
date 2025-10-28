@@ -7,7 +7,7 @@ import landing from './assets/landing_page.jpg';
 import landing2 from './assets/landing_page2.jpg';
 import landing3 from './assets/landing_page3.jpg';
 import landing4 from './assets/landing_page4.jpg';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, link } from 'react-router-dom';
 import './App.css'; 
 import './assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,7 +27,11 @@ function App() {
           <span className='h5 ms-2 fw-bold'>HACKAREDIS</span>
         </div>
         <div>
-          <button className='btn btn-info text-white fw-semibold px-3 d-flex gap-2 align-items-center'><i className="bi bi-people-fill"></i>S'inscrire</button>
+          
+      <a href="https://hackaredis.vercel.app/login" className='btn btn-info text-white fw-semibold px-3 d-flex gap-2 align-items-center'>
+                         <i className="bi bi-people-fill"></i> S'inscrire
+      </a>
+           
         </div>
       </nav>
       <main className='row d-flex flex-column md-flex-md-row flex-lg-row pb-5  mt-5 pt-5'>
@@ -221,9 +225,9 @@ function App() {
   </div>
 </section>
  <section>
-{/*           
+        
       <h2 className=' underline-animate my-6 py-6 fs-7' style={{color: " #22B8E5"}}> Nos Partenaires</h2>
-      <div className="container text-center py-5">
+      {/* <div className="container text-center py-5">
   <div className="row">
     <div className="col-lg-4">
       <img
@@ -275,7 +279,7 @@ function App() {
         Vvoir les details »
     </button>     </div>
   </div>
-</div> */}
+</div>  */}
 
  </section>
 
