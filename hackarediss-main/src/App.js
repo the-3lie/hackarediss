@@ -163,6 +163,14 @@ function App() {
               </div>
               <h6 class="mb-0">Licence 2</h6>
             </div>
+            <div class="mt-5 pt-5">
+              <div class="w-64-px h-64-px d-inline-flex align-items-center justify-content-center  mb-3 radius-12">
+                <div className='feature-icon'>
+                <i class="bi bi-award-fill h5"></i>
+              </div>
+              </div>
+              <h6 class="mb-0">Licence 3</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -177,7 +185,7 @@ function App() {
               </div>
               </div>
               <h6 class="mb-2">Selection (Phase de Quizz en ligne)</h6>
-              <p class="card-text text-secondary"> <i class="bi bi-calendar"></i> Mercredi 12 Novembre 2025</p>
+              <p class="card-text text-secondary fw-bold"> <i class="bi bi-calendar"></i> Mercredi 12 Novembre 2025</p>
             </div>
 
             <div class="mt-5">
@@ -187,7 +195,17 @@ function App() {
               </div>
                </div>
               <h6 class="mb-2">Selection(Phase de Quizz en ligne)</h6>
-              <p class="card-text text-secondary">
+              <p class="card-text text-secondary fw-bold">
+                <i class="bi bi-calendar"></i> Vendredi 14 Novembre 2025</p>
+            </div>
+            <div class="mt-5">
+              <div class="w-64-px h-64-px d-inline-flex align-items-center justify-content-center  mb-3 radius-12">
+                <div className='feature-icon'>
+                <i class="bi bi-calendar h5"></i>
+              </div>
+               </div>
+              <h6 class="mb-2">Selection(Phase de Quizz en ligne)</h6>
+              <p class="card-text text-secondary fw-bold">
                 <i class="bi bi-calendar"></i> Vendredi 14 Novembre 2025</p>
             </div>
           </div>
@@ -385,13 +403,13 @@ prêt à relever le défi, tout en motivant ton talent, viens vivre une expérie
           </Col>
 
           {/* Liens rapides */}
-          <Col md={4} className="mt-7   mb-md-">
+          <Col md={4} className="mt-7">
             <h5 className="fw-bold mb-6 ps-5">Liens utiles</h5>
             <ul className=" ps-5  ">
-              <li><a href="#home" className="text-white text-decoration-none  ">Accueil</a></li>
-              <li><a href="#about" className="text-white text-decoration-none">À propos</a></li>
-              <li><a href="#events" className="text-white text-decoration-none">Événements</a></li>
-              <li><a href="#contact" className="text-white text-decoration-none">Contact</a></li>
+              <li><a href="#home" className="text-white underline-animate-dark-a text-decoration-none  ">Accueil</a></li>
+              <li><a href="#about" className="text-white underline-animate-dark-a text-decoration-none">À propos</a></li>
+              <li><a href="#events" className="text-white underline-animate-dark-a text-decoration-none">Événements</a></li>
+              <li><a href="#contact" className="text-white underline-animate-dark-a text-decoration-none">Contact</a></li>
             </ul>
           </Col>
 
@@ -411,6 +429,9 @@ prêt à relever le défi, tout en motivant ton talent, viens vivre une expérie
 
         {/* Copyright */}
         <Row>
+          <Col className="text-center small">
+            <a href="#" class="underline-animate-dark-a text-white">Developed by our team</a>.
+          </Col>
           <Col className="text-center small">
             &copy; {new Date().getFullYear()} HackaRedis. Tous droits réservés.
           </Col>
